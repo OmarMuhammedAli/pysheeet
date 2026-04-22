@@ -35,8 +35,8 @@ conventional all-to-all implementations often become a bottleneck during LLM
 training due to limited overlap with computation and suboptimal bandwidth
 utilization. NVSHMEM addresses this by exposing a device-side API that enables
 developers to implement custom all-to-all kernels—such as
-`pplx-kernels <https://github.com/perplexityai/pplx-kernels>`_ and
-`DeepEP <https://github.com/deepseek-ai/DeepEP>`_\—with GPU-initiated
+`pplx-kernels <https://github.com/perplexityai/pplx-kernels>`__ and
+`DeepEP <https://github.com/deepseek-ai/DeepEP>`__\—with GPU-initiated
 networking, eliminating costly GPU–CPU context switches.
 
 Despite these advantages, prior NVSHMEM versions (before 3.6.5) supported only
@@ -48,7 +48,7 @@ ordinary all-to-all collective communication.
 To evaluate the impact of multi-NIC support, we use the NVSHMEM device
 all-to-all performance tool to compare single-NIC and multi-NIC configurations.
 We also benchmark
-`pplx-kernels <https://github.com/perplexityai/pplx-kernels>`_ to assess
+`pplx-kernels <https://github.com/perplexityai/pplx-kernels>`__ to assess
 whether MoE dispatch and combine operations benefit from multi-NIC EFA on the
 libfabric backend.
 
@@ -56,10 +56,10 @@ NVSHMEM Device All-to-All
 -------------------------
 
 To verify that multi-NIC round-robin is functioning correctly, we use
-`rdmatop <https://github.com/crazyguitar/rdmatop>`_ to monitor RDMA traffic
+`rdmatop <https://github.com/crazyguitar/rdmatop>`__ to monitor RDMA traffic
 across all EFA NICs during NVSHMEM benchmarks. The experiments follow the
 NVSHMEM examples in the
-`rdmatop <https://github.com/crazyguitar/rdmatop/tree/main/examples/nvshmem>`_
+`rdmatop <https://github.com/crazyguitar/rdmatop/tree/main/examples/nvshmem>`__
 repository.
 
 We run two benchmarks from the NVSHMEM perftest suite on a Slurm cluster. The
@@ -99,12 +99,12 @@ pplx-kernels All-to-All
 -----------------------
 
 To assess whether real-world MoE workloads benefit from multi-NIC support, we
-benchmark `pplx-kernels <https://github.com/ppl-ai/pplx-kernels>`_\—an
+benchmark `pplx-kernels <https://github.com/ppl-ai/pplx-kernels>`__\—an
 NVSHMEM-based implementation of MoE dispatch and combine operations used in
 production serving systems such as
 `vLLM <https://github.com/vllm-project/vllm>`_. The experiment follows the
 pplx example in the
-`rdmatop <https://github.com/crazyguitar/rdmatop/tree/main/examples/pplx>`_
+`rdmatop <https://github.com/crazyguitar/rdmatop/tree/main/examples/pplx>`__
 repository.
 
 .. code-block:: bash
@@ -226,9 +226,9 @@ large-scale LLM training and serving workloads.
 References
 ----------
 
-.. [1] `NVSHMEM 3.6.5 Release <https://github.com/NVIDIA/nvshmem/releases/tag/v3.6.5-0>`_
-.. [2] `DeepEP: an open-source EP communication library <https://github.com/deepseek-ai/DeepEP>`_
-.. [3] `pplx-kernels: NVSHMEM-based MoE kernels <https://github.com/ppl-ai/pplx-kernels>`_
-.. [4] `rdmatop: RDMA traffic monitoring tool <https://github.com/crazyguitar/rdmatop>`_
-.. [5] `libfabric: fix multi-NIC RX imbalance for EFA transport <https://github.com/NVIDIA/nvshmem/pull/76>`_
-.. [6] `Improving Network Performance of HPC Systems Using NVIDIA Magnum IO NVSHMEM and GPUDirect Async <https://developer.nvidia.com/blog/improving-network-performance-of-hpc-systems-using-nvidia-magnum-io-nvshmem-and-gpudirect-async/>`_
+#. `NVSHMEM 3.6.5 Release <https://github.com/NVIDIA/nvshmem/releases/tag/v3.6.5-0>`__
+#. `DeepEP: an open-source EP communication library <https://github.com/deepseek-ai/DeepEP>`__
+#. `pplx-kernels: NVSHMEM-based MoE kernels <https://github.com/ppl-ai/pplx-kernels>`__
+#. `rdmatop: RDMA traffic monitoring tool <https://github.com/crazyguitar/rdmatop>`__
+#. `libfabric: fix multi-NIC RX imbalance for EFA transport <https://github.com/NVIDIA/nvshmem/pull/76>`__
+#. `Improving Network Performance of HPC Systems Using NVIDIA Magnum IO NVSHMEM and GPUDirect Async <https://developer.nvidia.com/blog/improving-network-performance-of-hpc-systems-using-nvidia-magnum-io-nvshmem-and-gpudirect-async/>`__
