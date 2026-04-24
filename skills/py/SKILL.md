@@ -1,6 +1,6 @@
 ---
 name: py
-description: Comprehensive Python programming reference covering syntax, concurrency, networking, databases, ML/LLM development, and HPC. Use for: Python questions, debugging, performance optimization, async patterns, library examples, code review, best practices, MLOps workflows, distributed computing, security implementations, and any Python development tasks.
+description: Comprehensive Python programming reference covering syntax, concurrency, networking, databases, ML/LLM development, and HPC. Use for: Python questions, Python interview preparation, debugging, performance optimization, async patterns, library examples, code review, best practices, MLOps workflows, distributed computing, security implementations, and any Python development tasks.
 ---
 
 # Python Cheat Sheets (/py)
@@ -24,6 +24,7 @@ When a user asks a Python question or wants to write a Python script:
 
 ## Coverage Areas
 
+**Interview Prep:** Curated Python interview questions grouped by topic (GIL, asyncio, decorators, MRO, generators, concurrency), each deep-linked to the section that answers it
 **Core:** Syntax, typing, OOP, functions, data structures, sets, heap, regex, unicode
 **System:** File I/O, datetime, OS interfaces
 **Concurrency:** Threading, multiprocessing, asyncio
@@ -42,6 +43,8 @@ When a user asks a Python question or wants to write a Python script:
 
 ## Examples
 
+- "What should I review for a Python interview?" → Fetch https://www.pythonsheets.com/notes/interview/index.html and walk the reader through the topic groups
+- "Common Python interview questions on the GIL" → Fetch https://www.pythonsheets.com/notes/interview/index.html and then drill into https://www.pythonsheets.com/notes/concurrency/python-threading.html for detailed answers
 - "How does asyncio work?" → Fetch https://www.pythonsheets.com/notes/asyncio/python-asyncio-guide.html and explain with the site's examples
 - "Write a socket server" → Fetch https://www.pythonsheets.com/notes/network/python-socket-server.html, use the patterns to write a working server
 - "What's the walrus operator?" → Fetch https://www.pythonsheets.com/notes/appendix/python-walrus.html and explain with practical examples

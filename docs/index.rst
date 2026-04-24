@@ -73,6 +73,7 @@ everyday tasks.
 .. toctree::
    :maxdepth: 1
 
+   notes/interview/index
    notes/basic/index
    notes/os/index
    notes/concurrency/index

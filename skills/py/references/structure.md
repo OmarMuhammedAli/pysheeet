@@ -2,6 +2,9 @@
 
 Complete reference guide organized by topic, with direct links to live documentation.
 
+## Python Interview Cheatsheet
+- **Python Interview Cheatsheet** → https://www.pythonsheets.com/notes/interview/index.html — Curated interview questions, each deep-linked to the section that answers it
+
 ## Core Python
 - **Basics** → https://www.pythonsheets.com/notes/basic/python-basic.html
 - **Type Hints** → https://www.pythonsheets.com/notes/basic/python-typing.html

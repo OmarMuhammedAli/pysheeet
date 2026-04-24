@@ -62,6 +62,16 @@ Installation
     mkdir -p ~/.claude/skills
     cp -r pysheeet/skills/py ~/.claude/skills/py
 
+Python Interview Cheatsheet
+===========================
+
+Curated Python interview questions indexed by topic — each question links
+directly to the section of the cheat sheet that answers it. Use it for quick
+review before an interview, or to drill down on a specific area (GIL, asyncio,
+decorators, MRO, and more).
+
+- `Python Interview Cheatsheet <docs/notes/interview/index.rst>`_
+
 What's New In Python 3
 ======================
 
